@@ -8,7 +8,7 @@ const router = require("express").Router();
 const { isAuthenticated } = require("../middlewares/jwt.middleware");
 
 router.post("/signup", (req, res, next) => {
-    const { email, password, name } = req.body;
+    const { email, password, name, userName } = req.body;
  
     // Check if the email or password or name is provided as an empty string 
     if (email === '' || password === '' || name === '') {
@@ -46,7 +46,7 @@ router.post("/signup", (req, res, next) => {
    
         // Create a new user in the database
         // We return a pending promise, which allows us to chain another `then` 
-        return User.create({ email, password: hashedPassword, name });
+        return User.create({ email, password: hashedPassword, name, userName });
       })
       .then((createdUser) => {
         // Deconstruct the newly created user object to omit the password
