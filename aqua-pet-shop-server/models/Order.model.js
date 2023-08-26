@@ -3,12 +3,10 @@ const Schema = mongoose.Schema;
 
 
 const OrderSchema = new Schema({
-    _id: {type: Number, required: true},
-    userId: [ { type: Schema.Types.ObjectId, ref: 'User' } ],
+    userId: { type: Schema.Types.ObjectId, ref: 'User' },
     purchase: [ { type: Schema.Types.ObjectId, ref: 'Product' } ],
     date: {type: Date, required: true},
-    description: {type: [] , required:true},
-    paymentInfo: {type: [] , required:true},     
+    description: {type: String , required:true},   
     
 });
 
