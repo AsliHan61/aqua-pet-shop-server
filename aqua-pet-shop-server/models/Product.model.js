@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const ProductSchema = new Schema({
     name: {type: String, required: true},
-    type: {enum: ['Fish', 'Aquarium', 'Food', 'Accessories'], required: true},
+    type: {type: String, enum: ['Fish', 'Aquarium', 'Food', 'Accessories'], required: true},
     price: {type: Number, required: true},
     stock: {type: Number, required: true},
     description: {type: String , required:true},
@@ -12,7 +12,7 @@ const ProductSchema = new Schema({
     rating: {type: Number,
         validate: {
           validator: function(value) {
-            return value < 0 && value > 5;
+            return value > 0 && value <= 5;
           },
           message: 'Please, rate between 1 and 5.'
         },

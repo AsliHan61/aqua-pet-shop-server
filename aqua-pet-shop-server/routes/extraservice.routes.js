@@ -1,7 +1,7 @@
 const router = require("express").Router();
  
 
-const ExtraService = require("./models/ExtraService.model");
+const ExtraService = require("../models/ExtraService.model");
 
 router.post("/ExtraService", (req, res, next) => {
     const { name, type, price, description, imgURL, rating } = req.body;

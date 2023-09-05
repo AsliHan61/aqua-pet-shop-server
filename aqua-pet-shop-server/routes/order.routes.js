@@ -1,7 +1,7 @@
 const router = require("express").Router();
  
 
-const Order = require("./models/Order.model");
+const Order = require("../models/Order.model");
 
 router.post("/Order", (req, res, next) => {
     const { _id, userId, purchase, date, description, paymentInfo } = req.body;

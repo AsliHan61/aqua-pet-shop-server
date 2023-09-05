@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const ExtraServiceSchema = new Schema({
     name: {type: String, required: true},
     adminId: { type: Schema.Types.ObjectId, ref: 'User' },
-    type: {enum: ['Cleaner', 'Installation', 'Maintenance'], required: true},
+    type: {type: String, enum: ['Cleaner', 'Installation', 'Maintenance'], required: true},
     price: {type: Number, required: true},
     description: {type: String , required:true},
     imgURL: {type: String, required: true},
