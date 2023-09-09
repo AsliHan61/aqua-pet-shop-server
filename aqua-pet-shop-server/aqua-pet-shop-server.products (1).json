@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "64fa1237687764995798a4a8"
+  },
+  "name": "Red Fish",
+  "type": "Fish",
+  "price": 20,
+  "stock": 3,
+  "description": "Red Small Fish",
+  "imgURL": "https://www.fisheries.noaa.gov/s3/styles/original/s3/2022-07/640x427-Acadian-Redfish-NOAAFisheries.png?itok=2MlNuAf5",
+  "rating": 5,
+  "adminId": {
+    "$oid": "64fa10fa687764995798a4a5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64fa12bf687764995798a4aa"
+  },
+  "name": "BlueFish",
+  "type": "Fish",
+  "price": 7,
+  "stock": 1,
+  "description": "Blue Small Fish",
+  "imgURL": "https://guidesly.com/static/9f2638c6cdb7e36a31eee8c26e0a05f7/4576d/Bluefish_ID_1600x_7bd68aaedf.png",
+  "rating": 3,
+  "adminId": {
+    "$oid": "64fa10fa687764995798a4a5"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64fa12ca687764995798a4ac"
+  },
+  "name": "BlueFish",
+  "type": "Fish",
+  "price": 7,
+  "stock": 1,
+  "description": "Blue Small Fish",
+  "imgURL": "https://guidesly.com/static/9f2638c6cdb7e36a31eee8c26e0a05f7/4576d/Bluefish_ID_1600x_7bd68aaedf.png",
+  "rating": 3,
+  "adminId": {
+    "$oid": "64fa10fa687764995798a4a5"
+  },
+  "__v": 0
+}]
